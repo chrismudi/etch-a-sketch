@@ -45,10 +45,10 @@ document.addEventListener("mouseover", event => {
 // Coloring grid
 
 reset.addEventListener("click", function() {
-	const number = prompt("Enter number 1 - 30.");
-	while(number < 1 || number > 30) {
+	const number = prompt("Enter number 1 - 100.");
+	while(number < 1 || number > 100) {
 		const rightNumber = prompt("Enter the right number!");
-		if(rightNumber > 0 && rightNumber < 31) {
+		if(rightNumber > 0 && rightNumber < 101) {
 			addGrid(rightNumber);
 			return rightNumber;
 			}
